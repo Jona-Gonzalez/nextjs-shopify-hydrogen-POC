@@ -25,6 +25,7 @@ export async function getStaticProps({
   params,
   locale,
 }: GetStaticPropsContext<{ handle: string }>) {
+  console.log({ params })
   const product = await getProduct(shopifyConfig, {
     handle: params?.handle,
   })

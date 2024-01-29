@@ -5,11 +5,15 @@ import { builder, Builder } from '@builder.io/react'
 import builderConfig from '@config/builder'
 builder.init(builderConfig.apiKey)
 
+import '../styles.css'
+
 import '@builder.io/widgets'
 import '../blocks/ProductGrid/ProductGrid.builder'
 import '../blocks/CollectionView/CollectionView.builder'
 import '../blocks/ProductView/ProductView.builder'
 import '../blocks/CloudinaryImage/CloudinaryImage.builder'
+import '../blocks/CustomComponents/Title/Title.builder'
+import '../blocks/CustomComponents/Footer/Footer.builder'
 
 Builder.register('insertMenu', {
   name: 'Shopify Collections Components',
